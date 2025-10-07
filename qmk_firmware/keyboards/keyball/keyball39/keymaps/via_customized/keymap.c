@@ -72,7 +72,7 @@ void oledkit_render_info_user(void) {
 
 #ifdef COMBO_ENABLE
 enum combos {
-    JE_EXCLAM,
+    JE_EXCLAIM,
     JQ_QUES,
     PO_ESC,
     AS_TAB,
@@ -88,7 +88,7 @@ const uint16_t PROGMEM my_zx[] = {KC_Z, KC_X, COMBO_END};
 
 combo_t key_combos[] = {
 
-    [JE_EXCLAM] = COMBO(my_je, KC_EXCLAM),
+    [JE_EXCLAIM] = COMBO(my_je, KC_EXCLAIM),
     [JQ_QUES] = COMBO(my_jq, KC_QUES),
     [PO_ESC] = COMBO(my_po, KC_ESC),
     [AS_TAB] = COMBO(my_as, KC_TAB),
