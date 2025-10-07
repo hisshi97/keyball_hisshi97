@@ -72,27 +72,66 @@ void oledkit_render_info_user(void) {
 
 #ifdef COMBO_ENABLE
 enum combos {
+    JA_AND,
     JE_EXCLAIM,
     JQ_QUES,
-    PO_ESC,
+    JS_SINGQUOTE,
+    JW_DQUOTE,
+    JD_DOLLAR,
+    JT_TASU,
+    FH_HASH,
+    FN_NAMI,
+    FP_PERCENT,
+    JC_CARET,
+    FK_KOME,
+    JB_BOU,
+    SL_SLASH,
+    FU_UNDERSCORE,
+    QW_ESC,
     AS_TAB,
-    ZX_CAPS,
+    CL_CAPS,
 };
 
+const uint16_t PROGMEM my_ja[] = {KC_J, KC_A, COMBO_END};
 const uint16_t PROGMEM my_je[] = {KC_J, KC_E, COMBO_END};
 const uint16_t PROGMEM my_jq[] = {KC_J, KC_Q, COMBO_END};
-const uint16_t PROGMEM my_po[] = {KC_P, KC_O, COMBO_END};
+const uint16_t PROGMEM my_js[] = {KC_J, KC_S, COMBO_END};
+const uint16_t PROGMEM my_jw[] = {KC_J, KC_W, COMBO_END};
+const uint16_t PROGMEM my_jd[] = {KC_J, KC_D, COMBO_END};
+const uint16_t PROGMEM my_jt[] = {KC_J, KC_T, COMBO_END};
+const uint16_t PROGMEM my_fh[] = {KC_F, KC_H, COMBO_END};
+const uint16_t PROGMEM my_fn[] = {KC_F, KC_N, COMBO_END};
+const uint16_t PROGMEM my_fp[] = {KC_F, KC_P, COMBO_END};
+const uint16_t PROGMEM my_jc[] = {KC_J, KC_C, COMBO_END};
+const uint16_t PROGMEM my_fk[] = {KC_F, KC_K, COMBO_END};
+const uint16_t PROGMEM my_jb[] = {KC_J, KC_B, COMBO_END};
+const uint16_t PROGMEM my_sl[] = {KC_S, KC_L, COMBO_END};
+const uint16_t PROGMEM my_fu[] = {KC_F, KC_U, COMBO_END};
+const uint16_t PROGMEM my_qw[] = {KC_Q, KC_W, COMBO_END};
 const uint16_t PROGMEM my_as[] = {KC_A, KC_S, COMBO_END};
-const uint16_t PROGMEM my_zx[] = {KC_Z, KC_X, COMBO_END};
+const uint16_t PROGMEM my_cl[] = {KC_C, KC_L, COMBO_END};
 
 
 combo_t key_combos[] = {
 
+    [JA_AND] = COMBO(my_ja, KC_AMPR),
     [JE_EXCLAIM] = COMBO(my_je, KC_EXCLAIM),
     [JQ_QUES] = COMBO(my_jq, KC_QUES),
-    [PO_ESC] = COMBO(my_po, KC_ESC),
+    [JS_SINGQUOTE] = COMBO(my_js, KC_QUOTE),
+    [JW_DQUOTE] = COMBO(my_jw, KC_DQUOTE),
+    [JD_DOLLAR] = COMBO(my_jd, KC_DOLLAR),
+    [JT_TASU] = COMBO(my_jt, KC_PLUS),
+    [FH_HASH] = COMBO(my_fh, KC_HASH),
+    [FN_NAMI] = COMBO(my_fn, KC_TILDE),
+    [FP_PERCENT] = COMBO(my_fp, KC_PERCENT),
+    [JC_CARET] = COMBO(my_jc, KC_CIRC),
+    [FK_KOME] = COMBO(my_fk, KC_ASTERISK),
+    [JB_BOU] = COMBO(my_jb, KC_PIPE),
+    [SL_SLASH] = COMBO(my_sl, KC_SLSH),
+    [FU_UNDERSCORE] = COMBO(my_fu, KC_UNDERSCORE),
+    [QW_ESC] = COMBO(my_qw, KC_ESC),
     [AS_TAB] = COMBO(my_as, KC_TAB),
-    [ZX_CAPS] = COMBO(my_zx, KC_CAPS),
+    [CL_CAPS] = COMBO(my_cl, KC_CAPS),
 
 };
 #endif
