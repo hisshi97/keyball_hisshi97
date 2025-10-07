@@ -89,7 +89,7 @@ enum combos {
     FU_UNDERSCORE,
     QW_ESC,
     AS_TAB,
-    CL_CAPS,
+    CANDL_CAPS,
 };
 
 const uint16_t PROGMEM my_ja[] = {KC_J, KC_A, COMBO_END};
@@ -118,7 +118,7 @@ combo_t key_combos[] = {
     [JE_EXCLAIM] = COMBO(my_je, KC_EXCLAIM),
     [JQ_QUES] = COMBO(my_jq, KC_QUES),
     [JS_SINGQUOTE] = COMBO(my_js, KC_QUOTE),
-    [JW_DQUOTE] = COMBO(my_jw, KC_DQUOTE),
+    [JW_DQUOTE] = COMBO(my_jw, KC_DOUBLE_QUOTE),
     [JD_DOLLAR] = COMBO(my_jd, KC_DOLLAR),
     [JT_TASU] = COMBO(my_jt, KC_PLUS),
     [FH_HASH] = COMBO(my_fh, KC_HASH),
@@ -131,7 +131,7 @@ combo_t key_combos[] = {
     [FU_UNDERSCORE] = COMBO(my_fu, KC_UNDERSCORE),
     [QW_ESC] = COMBO(my_qw, KC_ESC),
     [AS_TAB] = COMBO(my_as, KC_TAB),
-    [CL_CAPS] = COMBO(my_cl, KC_CAPS),
+    [CANDL_CAPS] = COMBO(my_cl, KC_CAPS),
 
 };
 #endif
