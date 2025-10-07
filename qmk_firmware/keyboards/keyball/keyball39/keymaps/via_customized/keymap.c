@@ -72,7 +72,7 @@ void oledkit_render_info_user(void) {
 
 #ifdef COMBO_ENABLE
 enum combos {
-    JE_EXCLAM
+    JE_EXCLAM,
     JQ_QUES,
     PO_ESC,
     AS_TAB,
