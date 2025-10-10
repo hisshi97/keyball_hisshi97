@@ -72,6 +72,7 @@ void oledkit_render_info_user(void) {
 
 #ifdef COMBO_ENABLE
 enum combos {
+  
     JA_AND,
     JE_EXCLAIM,
     JQ_QUES,
@@ -90,7 +91,11 @@ enum combos {
     QW_ESC,
     AS_TAB,
     CANDL_CAPS,
-};
+    JK_LeftClick1,
+    KL_RightClick1,
+    VC_LeftClick2,
+    DS_RightClick2,
+ };
 
 const uint16_t PROGMEM my_ja[] = {KC_J, KC_A, COMBO_END};
 const uint16_t PROGMEM my_je[] = {KC_J, KC_E, COMBO_END};
@@ -110,6 +115,11 @@ const uint16_t PROGMEM my_fu[] = {KC_F, KC_U, COMBO_END};
 const uint16_t PROGMEM my_qw[] = {KC_Q, KC_W, COMBO_END};
 const uint16_t PROGMEM my_as[] = {KC_A, KC_S, COMBO_END};
 const uint16_t PROGMEM my_cl[] = {KC_C, KC_L, COMBO_END};
+const uint16_t PROGMEM my_jk[] = {KC_J, KC_K, COMBO_END};
+const uint16_t PROGMEM my_kl[] = {KC_K, KC_L, COMBO_END};
+const uint16_t PROGMEM my_vc[] = {KC_V, KC_C, COMBO_END};
+const uint16_t PROGMEM my_ds[] = {KC_D, KC_S, COMBO_END};
+
 
 
 combo_t key_combos[] = {
@@ -132,6 +142,9 @@ combo_t key_combos[] = {
     [QW_ESC] = COMBO(my_qw, KC_ESC),
     [AS_TAB] = COMBO(my_as, KC_TAB),
     [CANDL_CAPS] = COMBO(my_cl, KC_CAPS),
-
+    [JK_LeftClick1] = COMBO(my_jk, KC_BTN1),
+    [KL_RightClick1] = COMBO(my_kl, KC_BTN2),
+    [VC_LeftClick2] = COMBO(my_vc, KC_BTN1),
+    [DS_RightClick2] = COMBO(my_ds, KC_BTN2),
 };
 #endif
