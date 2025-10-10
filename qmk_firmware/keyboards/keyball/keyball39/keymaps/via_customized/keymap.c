@@ -93,7 +93,7 @@ enum combos {
     CANDL_CAPS,
     JK_LeftClick1,
     KL_RightClick1,
-    VC_LeftClick2,
+    FD_LeftClick2,
     DS_RightClick2,
  };
 
@@ -117,7 +117,7 @@ const uint16_t PROGMEM my_as[] = {KC_A, KC_S, COMBO_END};
 const uint16_t PROGMEM my_cl[] = {KC_C, KC_L, COMBO_END};
 const uint16_t PROGMEM my_jk[] = {KC_J, KC_K, COMBO_END};
 const uint16_t PROGMEM my_kl[] = {KC_K, KC_L, COMBO_END};
-const uint16_t PROGMEM my_vc[] = {KC_V, KC_C, COMBO_END};
+const uint16_t PROGMEM my_fd[] = {KC_F, KC_D, COMBO_END};
 const uint16_t PROGMEM my_ds[] = {KC_D, KC_S, COMBO_END};
 
 
@@ -144,7 +144,7 @@ combo_t key_combos[] = {
     [CANDL_CAPS] = COMBO(my_cl, KC_CAPS),
     [JK_LeftClick1] = COMBO(my_jk, KC_BTN1),
     [KL_RightClick1] = COMBO(my_kl, KC_BTN2),
-    [VC_LeftClick2] = COMBO(my_vc, KC_BTN1),
+    [FD_LeftClick2] = COMBO(my_fd, KC_BTN1),
     [DS_RightClick2] = COMBO(my_ds, KC_BTN2),
 };
 #endif
