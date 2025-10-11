@@ -48,4 +48,4 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define AUTO_MOUSE_DEFAULT_LAYER 1 // 切り替えるマウスレイヤー番号を指定
 #define AUTO_MOUSE_TIME 500 // マウスが止まってから元のレイヤーに戻るまでの時間(ms)
 
-#define COMBO_TERM 80 // コンボの判定時間 (ms) (default: 50)
+#define COMBO_TERM 50 // コンボの判定時間 (ms) (default: 50)

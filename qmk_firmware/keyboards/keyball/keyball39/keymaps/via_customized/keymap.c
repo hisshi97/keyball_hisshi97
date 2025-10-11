@@ -89,7 +89,7 @@ enum combos {
     SL_SLASH,
     FU_UNDERSCORE,
     QW_ESC,
-    AS_TAB,
+    TR_TAB,
     CANDL_CAPS,
     JK_LeftClick1,
     KL_RightClick1,
@@ -113,7 +113,7 @@ const uint16_t PROGMEM my_jb[] = {KC_J, KC_B, COMBO_END};
 const uint16_t PROGMEM my_sl[] = {KC_S, KC_L, COMBO_END};
 const uint16_t PROGMEM my_fu[] = {KC_F, KC_U, COMBO_END};
 const uint16_t PROGMEM my_qw[] = {KC_Q, KC_W, COMBO_END};
-const uint16_t PROGMEM my_as[] = {KC_A, KC_S, COMBO_END};
+const uint16_t PROGMEM my_TR[] = {KC_T, KC_R, COMBO_END};
 const uint16_t PROGMEM my_cl[] = {KC_C, KC_L, COMBO_END};
 const uint16_t PROGMEM my_jk[] = {KC_J, KC_K, COMBO_END};
 const uint16_t PROGMEM my_kl[] = {KC_K, KC_L, COMBO_END};
@@ -140,7 +140,7 @@ combo_t key_combos[] = {
     [SL_SLASH] = COMBO(my_sl, KC_SLSH),
     [FU_UNDERSCORE] = COMBO(my_fu, KC_UNDERSCORE),
     [QW_ESC] = COMBO(my_qw, KC_ESC),
-    [AS_TAB] = COMBO(my_as, KC_TAB),
+    [TR_TAB] = COMBO(my_TR, KC_TAB),
     [CANDL_CAPS] = COMBO(my_cl, KC_CAPS),
     [JK_LeftClick1] = COMBO(my_jk, KC_BTN1),
     [KL_RightClick1] = COMBO(my_kl, KC_BTN2),
