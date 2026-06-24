@@ -40,8 +40,8 @@ jobs:
       run: |
         /usr/bin/python3 -m pip install --break-system-packages -r __qmk__/requirements.txt
         /opt/uv/tools/qmk/bin/python3 -m pip install appdirs
-        # エラーの原因である「ast.Num」を「ast.Constant」に直接ファイル書き換えして修正
-        sed -i 's/ast.Num/ast.Constant/g' __qmk__/lib/python/qmk/math.py
+        # .n → .value に修正（これが本当の原因）
+        sed -i 's/return node\.n/return node.value/' __qmk__/lib/python/qmk/math.py
 
     - name: Compile and link
       run: qmk compile -j 4 -kb keyball/${{ inputs.keyboard }} -km ${{ inputs.keymap }}
