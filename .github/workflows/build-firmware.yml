@@ -23,7 +23,7 @@ jobs:
 
     runs-on: ubuntu-22.04
     container:
-      image: ghcr.io/qmk/qmk_cli:2024-11-09-002d0b
+      image: ghcr.io/qmk/qmk_cli:latest
 
     steps:
 
@@ -40,6 +40,8 @@ jobs:
       run: |
         /usr/bin/python3 -m pip install --break-system-packages -r __qmk__/requirements.txt
         /opt/uv/tools/qmk/bin/python3 -m pip install appdirs
+        # Python 3.14の互換性バグを力技で修正するパッチ
+        /opt/uv/tools/qmk/bin/python3 -c "import ast; setattr(ast, 'Num', getattr(ast, 'Constant', None))"
 
     - name: Compile and link
       run: qmk compile -j 4 -kb keyball/${{ inputs.keyboard }} -km ${{ inputs.keymap }}
