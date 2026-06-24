@@ -35,11 +35,11 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #define TAP_CODE_DELAY 5
 
-#define POINTING_DEVICE_AUTO_MOUSE_ENABLE
-#define AUTO_MOUSE_DEFAULT_LAYER 1
+//#define POINTING_DEVICE_AUTO_MOUSE_ENABLE
+//#define AUTO_MOUSE_DEFAULT_LAYER 1
 
 // 以下追記
-#define DYNAMIC_KEYMAP_LAYER_COUNT 5 // レイヤー数
+#define DYNAMIC_KEYMAP_LAYER_COUNT 6 // レイヤー数
 #define OLED_TIMEOUT 30000 // OLEDの消灯までの時間 (ms) (default: 60000)
 #define KEYBALL_CPI_DEFAULT 1100 // マウス速度 (default: 500)
 #define KEYBALL_SCROLL_DIV_DEFAULT 5 // スクロール速度 (default: 4)
